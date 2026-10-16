@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#061313">
+  <meta name="description" content="Mi espacio personal en xat.com.">
+  <title>Mi Espacio | XatSpace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-left"></div>
+  <div class="ambient ambient-right"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span class="brand-orbit"><span></span></span>
+      <span>xat</span>
+    </a>
+    <span class="top-label">MI ESPACIO PERSONAL</span>
+  </header>
+
+  <main class="page" id="inicio">
+    <section class="profile-card" aria-labelledby="welcome-title">
+      <div class="card-glow"></div>
+      <div class="portrait-wrap">
+        <div class="portrait-ring"></div>
+        <img class="portrait" src="assets/minha-foto.png" alt="Minha foto de perfil">
+      </div>
+
+      <p class="eyebrow">UN LUGAR CON MI ESENCIA</p>
+      <h1 id="welcome-title">BIENVENIDO A<br><span>MI XATSPACE</span></h1>
+      <p class="subtitle">Un poco de mí, a mi manera.</p>
+      <div class="accent-line"></div>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav-link active" href="#inicio">Inicio</a>
+        <span class="nav-dot"></span>
+        <a class="nav-link" href="#music-panel" data-panel="music-panel">Música</a>
+        <span class="nav-dot"></span>
+        <a class="nav-link" href="#about-panel" data-panel="about-panel">Sobre mí</a>
+      </nav>
+
+      <p class="home-quote">“El mundo es demasiado grande para ser comprendido desde una sola perspectiva.”</p>
+
+      <section class="mini-panel" id="music-panel" aria-label="Player de música" hidden>
+        <span class="panel-label">REPRODUCIENDO AHORA</span>
+        <p class="panel-title">Keane - Somewhere Only We Know</p>
+        <div class="music-player" role="group" aria-label="Player de música">
+          <button class="play-button" type="button" aria-label="Reproduzir música" aria-pressed="false">▶</button>
+          <div class="progress-wrap">
+            <input class="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Progresso da música">
+            <div class="time-row"><span class="current-time">0:00</span><span class="duration">0:00</span></div>
+          </div>
+        </div>
+        <audio class="audio-source" preload="metadata" aria-label="Player de música">
+          <source src="./Keane.mp3" type="audio/mpeg">
+          Tu navegador no admite audio.
+        </audio>
+      </section>
+
+      <section class="mini-panel" id="about-panel" aria-label="Sobre mí" hidden>
+        <span class="panel-label">SOBRE MÍ</span>
+        <p class="panel-copy">Estudiante de Sistemas de Información, interesado en la ciberseguridad, Linux y la infraestructura de TI. Me gustan la lectura, la historia y la cultura, y siempre busco nuevos conocimientos y oportunidades para crecer.</p>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
